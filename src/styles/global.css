@@ -55,6 +55,8 @@ body {
   }
 
   .panel {
-    @apply rounded-xl border border-white/10 bg-brand-dark/70 backdrop-blur;
+    @apply rounded-xl border backdrop-blur;
+    border-color: rgba(255, 255, 255, 0.1);
+    background-color: rgba(48, 48, 48, 0.7);
   }
 }
