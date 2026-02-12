@@ -1,0 +1,38 @@
+---
+const WHATSAPP_PHONE = '521XXXXXXXXXX';
+const message = encodeURIComponent('Hola, me gustaría cotizar concreto estampado para mi obra.');
+---
+
+<section id="inicio" class="relative overflow-hidden py-24">
+  <div class="container relative z-10 grid gap-10 md:grid-cols-2 md:items-center">
+    <div>
+      <p class="badge mb-4">Constructora S.A. de C.V.</p>
+      <h1 class="font-heading text-5xl uppercase leading-tight md:text-6xl">
+        Concreto estampado y acabados
+      </h1>
+      <p class="mt-5 text-lg text-white/85">
+        Concretos Estampados de Nayarit. Calidad, diseño y durabilidad para tu obra.
+      </p>
+      <div class="mt-8 flex flex-wrap gap-4">
+        <a
+          class="btn-primary"
+          href={`https://wa.me/${WHATSAPP_PHONE}?text=${message}`}
+          target="_blank"
+          rel="noopener noreferrer"
+        >
+          Cotizar por WhatsApp
+        </a>
+        <a class="btn-outline" href="#catalogo">Ver catálogo</a>
+      </div>
+    </div>
+
+    <div class="panel p-8">
+      <p class="text-sm uppercase tracking-[0.3em] text-brand-yellow">Acabados industriales premium</p>
+      <ul class="mt-5 space-y-3 text-white/85">
+        <li>• Proyectos residenciales y comerciales</li>
+        <li>• Diseños estampados con amplia variedad de moldes</li>
+        <li>• Asesoría integral de obra y mantenimiento</li>
+      </ul>
+    </div>
+  </div>
+</section>

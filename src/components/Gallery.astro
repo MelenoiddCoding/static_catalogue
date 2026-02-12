@@ -1,0 +1,15 @@
+---
+const works = Array.from({ length: 9 }, (_, i) => i + 1);
+---
+
+<div class="grid gap-5 sm:grid-cols-2 lg:grid-cols-3">
+  {works.map((work) => (
+    <article class="panel overflow-hidden">
+      <div class="aspect-[4/3] bg-gradient-to-br from-brand-dark to-black" />
+      <div class="p-4">
+        <p class="font-semibold text-brand-yellow">Proyecto #{work}</p>
+        <p class="text-sm text-white/75">Galería placeholder. Sustituye por fotos reales del trabajo terminado.</p>
+      </div>
+    </article>
+  ))}
+</div>

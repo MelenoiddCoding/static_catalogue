@@ -1,0 +1,60 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+:root {
+  --brand-yellow: #F0D050;
+  --brand-yellow-2: #F0E050;
+  --brand-dark: #303030;
+  --brand-black: #000000;
+}
+
+html {
+  scroll-behavior: smooth;
+}
+
+body {
+  @apply bg-brand-black text-white antialiased;
+  font-family: 'Montserrat', system-ui, sans-serif;
+  background-image:
+    repeating-linear-gradient(
+      -35deg,
+      rgba(240, 208, 80, 0.08) 0px,
+      rgba(240, 208, 80, 0.08) 10px,
+      transparent 10px,
+      transparent 26px
+    ),
+    radial-gradient(circle at top right, rgba(240, 208, 80, 0.12), transparent 35%),
+    linear-gradient(120deg, #101010, #000000 70%);
+}
+
+.section-separator {
+  @apply my-10 h-px w-full;
+  background: linear-gradient(90deg, transparent, rgba(240, 208, 80, 0.8), transparent);
+}
+
+@layer components {
+  .btn-primary {
+    @apply inline-flex items-center gap-2 rounded-md border border-brand-yellow bg-brand-yellow px-5 py-3 font-semibold text-brand-black transition;
+    box-shadow: 0 0 0 rgba(240, 208, 80, 0.3);
+  }
+
+  .btn-primary:hover {
+    @apply bg-brand-yellow-2;
+    box-shadow: 0 0 16px rgba(240, 208, 80, 0.4);
+  }
+
+  .btn-outline {
+    @apply inline-flex items-center gap-2 rounded-md border border-brand-yellow px-5 py-3 font-semibold text-brand-yellow transition hover:bg-brand-yellow hover:text-brand-black;
+  }
+
+  .badge {
+    @apply inline-flex rounded-full border px-3 py-1 text-xs font-semibold uppercase tracking-wider text-brand-yellow;
+    border-color: rgba(240, 208, 80, 0.4);
+    background-color: rgba(240, 208, 80, 0.2);
+  }
+
+  .panel {
+    @apply rounded-xl border border-white/10 bg-brand-dark/70 backdrop-blur;
+  }
+}
