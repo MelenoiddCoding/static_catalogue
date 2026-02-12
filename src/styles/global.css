@@ -49,7 +49,9 @@ body {
   }
 
   .badge {
-    @apply inline-flex rounded-full border border-brand-yellow/40 bg-brand-yellow/20 px-3 py-1 text-xs font-semibold uppercase tracking-wider text-brand-yellow;
+    @apply inline-flex rounded-full border px-3 py-1 text-xs font-semibold uppercase tracking-wider text-brand-yellow;
+    border-color: rgba(240, 208, 80, 0.4);
+    background-color: rgba(240, 208, 80, 0.2);
   }
 
   .panel {
