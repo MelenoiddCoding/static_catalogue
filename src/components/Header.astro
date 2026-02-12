@@ -1,0 +1,27 @@
+---
+const links = [
+  { href: '#inicio', label: 'Inicio' },
+  { href: '#servicios', label: 'Servicios' },
+  { href: '#trabajos', label: 'Trabajos' },
+  { href: '#catalogo', label: 'Catálogo' },
+  { href: '#contacto', label: 'Contacto' },
+];
+---
+
+<header class="sticky top-0 z-50 border-b border-brand-yellow/20 bg-brand-black/85 backdrop-blur">
+  <div class="container flex items-center justify-between py-4">
+    <a href="#inicio" class="font-heading text-lg uppercase tracking-wider text-brand-yellow">
+      Concretos Estampados de Nayarit
+    </a>
+
+    <nav>
+      <ul class="hidden gap-5 text-sm md:flex">
+        {links.map((link) => (
+          <li>
+            <a class="transition hover:text-brand-yellow" href={link.href}>{link.label}</a>
+          </li>
+        ))}
+      </ul>
+    </nav>
+  </div>
+</header>
