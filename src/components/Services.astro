@@ -1,0 +1,21 @@
+---
+const services = [
+  'Concreto estampado decorativo',
+  'Pisos de concreto para alto tráfico',
+  'Banquetas y andadores',
+  'Cocheras y accesos vehiculares',
+  'Fachadas y muros con acabado industrial',
+  'Reparación y sellado de superficies',
+];
+---
+
+<div class="grid gap-5 sm:grid-cols-2 lg:grid-cols-3">
+  {services.map((service) => (
+    <article class="panel border-l-4 border-l-brand-yellow p-5">
+      <h3 class="font-heading text-xl uppercase">{service}</h3>
+      <p class="mt-3 text-sm text-white/80">
+        Texto descriptivo placeholder. Personaliza este contenido con detalles, tiempos estimados y beneficios.
+      </p>
+    </article>
+  ))}
+</div>
