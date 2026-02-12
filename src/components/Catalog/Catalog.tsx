@@ -1,8 +1,8 @@
 import { useEffect, useMemo, useState } from 'react';
 import Papa from 'papaparse';
 
-const SHEET_CSV_URL = 'REEMPLAZA_AQUI';
-const WHATSAPP_PHONE = '521XXXXXXXXXX';
+const SHEET_CSV_URL = 'https://docs.google.com/spreadsheets/d/1kCHU8USPaQORDWxqXw5_DTtEiVxPQf1lfeJ_4CId0d8/gviz/tq?tqx=out:csv&sheet=items';
+const WHATSAPP_PHONE = '5213111798614';
 
 type RawItem = {
   id?: string;
